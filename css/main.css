@@ -1,0 +1,665 @@
+/* =======================Genaral========================= */
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.title {
+  font-size: 3rem;
+  line-height: 3.5625rem;
+  font-weight: 700;
+  position: relative;
+}
+
+/* =======================NavBar========================= */
+.nav-style {
+  background-color: rgb(0, 0, 0, 0.9) !important;
+}
+
+
+.nav-style li a {
+  /* background-color: #0062d3; */
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-logo {
+  /* background-color: #0062d3; */
+
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-style .li-hover a::after {
+  content: '';
+  width: 85%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 90%;
+  left: -670px;
+  transition: left 0.7s ease-out;
+}
+
+.nav-style .li-hover:hover a::after {
+  left: 7px;
+}
+
+.dropdown-ico {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-45%);
+}
+
+.drob-down li {
+  padding: 10px 0;
+}
+
+.drob-down li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item .active {
+  border-bottom: 1px solid #fff;
+}
+
+.drob-down li a:hover {
+  color: #0062d3;
+}
+
+.drob-down {
+  position: absolute;
+  display: none;
+
+}
+
+.drob-menue:hover .drob-down {
+  display: block;
+}
+
+.drob-down .d-down {
+  background-color: #fff;
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  padding: 0 50px;
+  display: none;
+}
+
+.drob:hover .d-down {
+  display: block;
+}
+
+ul li .link-style {
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .025rem;
+}
+
+/* ======================Home============================= */
+#home {
+  min-height: 100vh;
+  background: linear-gradient(#00000099, #00000099), url("../image/hero-bg.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 110;
+}
+
+#home .text {
+  color: #fff;
+  text-align: center;
+}
+
+#home .text h1 {
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+
+  font-weight: 600;
+  position: relative;
+}
+
+#home .text h1::after {
+  content: '|';
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: typing 13.5s infinite;
+}
+
+/* Developer */
+/* Designer */
+/* Freelancer */
+/* Photographer| */
+
+@keyframes typing {
+
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+
+  1.1395%,
+  26.2093% {
+    content: "D|";
+  }
+
+  2.2791%,
+  25.0698% {
+    content: "De|";
+  }
+
+  3.4186%,
+  23.9302% {
+    content: "Dev|";
+  }
+
+  4.5581%,
+  22.7907% {
+    content: "Deve|";
+  }
+
+  5.6977%,
+  21.6512% {
+    content: "Devel|";
+  }
+
+  6.8372%,
+  20.5116% {
+    content: "Develo|";
+  }
+
+  7.9767%,
+  19.3721% {
+    content: "Develop|";
+  }
+
+  9.1163%,
+  18.2326% {
+    content: "Develope|";
+  }
+
+  10.2558%,
+  17.0930% {
+    content: "Developer|";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+
+  31.9070%,
+  50.1395% {
+    content: "D|";
+  }
+
+  33.0465%,
+  49.0000% {
+    content: "De|";
+  }
+
+  34.1860%,
+  47.8605% {
+    content: "Des|";
+  }
+
+  35.3256%,
+  46.7209% {
+    content: "Desi|";
+  }
+
+  36.4651%,
+  45.5814% {
+    content: "Desig|";
+  }
+
+  37.4040%,
+  44.8419% {
+    content: "Designe|";
+  }
+
+  37.6047%,
+  44.4419% {
+    content: "Designer|";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+
+  55.8372%,
+  74.0698% {
+    content: "F|";
+  }
+
+  57.9767%,
+  73.9302% {
+    content: "Fr|";
+  }
+
+  58.5163%,
+  70.7907% {
+    content: "Fre|";
+  }
+
+  59.6558%,
+  70.6512% {
+    content: "Free|";
+  }
+
+  61.0953%,
+  69.0116% {
+    content: "Freel|";
+  }
+
+  61.5349%,
+  68.3721% {
+    content: "Freela|";
+  }
+
+  62.6279%,
+  67.3605% {
+    content: "Freelan|";
+  }
+
+  63.4674%,
+  66.8209% {
+    content: "Freelane|";
+  }
+
+  64.9070%,
+  65.6814% {
+    content: "Freelaner|";
+  }
+}
+
+/* ======================About============================= */
+#about .container {
+  padding: 60px;
+}
+
+#about .about-info h6 {
+  font-size: 17px;
+}
+
+#about .about-info p {
+  font-size: 1rem;
+}
+
+#about .progress {
+  height: .625rem !important;
+}
+
+.title::after {
+  content: '';
+  width: 53px;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  top: 95px;
+  left: 48%;
+}
+
+#about .skills h5 {
+  color: #4E4E4E;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  padding: 10px 0;
+}
+
+#about .about-title {
+  position: relative;
+}
+
+#about .about-title::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  top: 45px;
+  left: 0%;
+}
+
+/* ======================service============================= */
+#service .item span {
+  padding: 40px;
+  border: 10px solid #0078ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #4E4E4E; */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  transition: 1s;
+}
+
+
+.card-info:hover.item span {
+  background-color: #0078ff !important;
+  border: 10px solid #CDE1F8 !important;
+}
+
+.card-info:hover i {
+  color: #fff !important;
+
+}
+
+#service .item span i {
+  font-size: 2.5rem;
+  color: #000;
+  transition: 1s;
+}
+
+#service .item h4 {
+  /* background: #0078ff; */
+  font-size: 1.4375rem;
+  line-height: 1.68rem;
+  padding: .9375rem 0;
+  font-weight: 500;
+
+}
+
+#service .item p {
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.service-data {
+  padding: 80px 0;
+}
+
+.data i {
+  color: #CDE1F8;
+  font-size: 30px;
+}
+
+.data span {
+  padding: 30px;
+  border: 10px solid #CDE1F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #4E4E4E; */
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 10px auto;
+}
+
+.data p {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 400;
+
+}
+
+.data .data-par {
+  color: #fff;
+
+  font-size: 1rem;
+}
+
+.service-data {
+  background: linear-gradient(#0077ffd7, #0077ff78), url(../image/counters-bg.jpg), center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+/* ======================PORTFOLIO============================= */
+
+.items h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.items p {
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.items i {
+  font-size: 40px;
+  color: #0078ff;
+  position: absolute;
+  top: 80%;
+  left: 89%;
+}
+
+.items i:hover {
+  cursor: pointer;
+}
+
+.items .card img {
+  transition: 1s;
+}
+
+.items .card:hover img {
+  transform: scale(1.2);
+}
+
+/* ======================slider============================= */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.slider {
+  background: linear-gradient(#0077ffd7, #0077ff78), url(../image/overlay-bg.jpg), center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.slider-data img {
+  width: 15% !important;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  padding: 40px 0;
+  transform: translatex(-50%);
+}
+
+.slider-data .carousel-caption {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+
+/* ======================BLOG============================= */
+.img-cards:hover {
+  cursor: pointer;
+}
+
+.card-links::before {
+  text-align: center;
+  content: attr(-data-befor);
+  width: 100%px;
+  height: 100%;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: 124%;
+  left: 50%;
+  transform: translateX(50%);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 11px;
+  padding: 8px;
+
+
+  font-weight: 500;
+
+}
+
+.card-links {
+  color: #4E4E4E;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.card-links:hover,
+.names:hover {
+  color: #0078ff;
+  cursor: pointer;
+}
+
+.card-fotter {
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card-fotter img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.time {
+  position: relative;
+}
+
+.time::after {
+  content: '\f017';
+  font-family: 'Font Awesome 6 free';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -22px;
+}
+
+/* ======================Contact============================= */
+#contact h3 {
+  position: relative;
+}
+
+#contact h3::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.contect-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contect-form button {
+  padding: 10px 24px;
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+.lists p {
+  padding-left: 10px;
+}
+
+.lists li i {
+  color: #0078ff;
+}
+
+.social {
+  width: 35%;
+}
+
+.social li {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #0078ff;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+
+.social li:hover {
+  background-color: #0078ff;
+  border: 4px solid #CDE1F8;
+}
+
+.social li:hover a {
+  color: #fff;
+}
+
+.social li a {
+  color: #000;
+  transition: 0.7s;
+}
+
+.social li i {
+  padding: 10px;
+}
+
+/* ======================Footer============================= */
+#footer {
+  background-color: #0062d3;
+
+}
+
+.copright {
+  font-size: 16px;
+
+  font-weight: 400;
+  color: #fff;
+}
+
+.copright+p,
+.copright+p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fixed-buttom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  display: block;
+  padding: 8px 14px;
+  border-radius: 50%;
+  background-color: #0078ff;
+
+}
+
+.fixed-buttom i {
+  color: #fff;
+}
